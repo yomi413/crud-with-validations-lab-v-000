@@ -7,7 +7,6 @@ class CreateSongs < ActiveRecord::Migration
       t.integer :release_year
       t.boolean :released
 
-
       t.timestamps null: false
     end
   end
