@@ -37,12 +37,12 @@ class SongsController < ApplicationController
       render :edit
     end
   end
-  # 
-  # def destroy
-  #   Song.find(params[:id]).destroy
-  #   redirect_to songs_path(@song)
-  # end
-  # 
+  
+  def destroy
+    Song.find(params[:id]).destroy
+    redirect_to songs_path(@song)
+  end
+  
   private
   
   def song_params(*args)
