@@ -32,7 +32,7 @@ class SongsController < ApplicationController
     @song.update(song_params(:title, :release_year, :released, :artist_name, :genre))
     if @song.valid?
       @song.save
-      redirect_to song_path(@song)
+      redirect_to songs_path(@song)
     else 
       render :edit
     end
