@@ -8,14 +8,16 @@
     <th>Release Year</th>
   </tr>
 
-  <tr>
+  <tbody>
     <% @songs.each do |song| %>
-      <td><%= song.title %></td>
-      <td><%= song.artist_name %></td>
-      <td><%= song.genre %></td>
-      <td><%= song.release_year %></td>
+      <tr>
+        <td><%= song.title %></td>
+        <td><%= song.artist_name %></td>
+        <td><%= song.genre %></td>
+        <td><%= song.release_year %></td>
+      </tr>
     <% end %>
-  </tr>
+  </tbody>
 </table>
 <br></br>
 <%= link_to "Create Song", new_song_path %>
