@@ -3,19 +3,19 @@
 <table>
   <tr>
     <th>Song Title</th>
-    <th>Release Year</th>
     <th>Artist Name</th>
     <th>Genre</th>
+    <th>Release Year</th>
   </tr>
 
   <tr>
     <% @songs.each do |song| %>
 
         <td><%= song.title %></td>
-        <td><%= song.release_year %></td>
         <td><%= song.artist_name %></td>
         <td><%= song.genre %></td>
-      
+        <td><%= song.release_year %></td>
+
     <% end %>
   </tr>
 </table>
